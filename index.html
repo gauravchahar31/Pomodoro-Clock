@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pomodoro Clock</title>
+</head>
+<body onload="timeSet()">
+    <div class="container">
+        <div class="timer">
+            <div id="session">
+                <span id="session_minutes"></span>
+                <span id="session_colon">:</span>
+                <span id="session_seconds"></span>
+                <img src="work.png">
+            </div>
+            <div id="break">
+                <span id="break_minutes"></span>
+                <span id="break_colon">:</span>
+                <span id="break_seconds"></span>
+                <img src="break.jpg">
+            </div>
+        </div>
+        <div class="title">
+            <span id="title">Session <span id="title_count"></span></span>
+            <span id="title2">Break!</span>
+        </div>
+        <div class="time_manager">
+            <div id="session_time">
+                <span id="session_timer">Session</span><br>
+                <span id="session_timer_minutes"></span>
+                <span id="session_timer_text">min</span><br>
+                <button id="session_plus">+</button>
+                <button id="session_minus">-</button>
+            </div>
+            <div id="break_time">
+                <span id="break_timer">Break</span><br>
+                <span id="break_timer_minutes"></span>
+                <span id="break_timer_text">min</span><br>
+                <button id="break_plus">+</button>
+                <button id="break_minus">-</button>
+            </div>
+        </div>
+        <div class="controller">
+            <button id="start_pause">Start</button>
+            <button id="reset">Reset</button>
+        </div>
+    </div>
+    <script src="script.js" type="text/javascript"></script>
+</body>
+</html>
